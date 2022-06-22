@@ -1,8 +1,11 @@
 import React from "react";
+import { useAppContext } from "../../context/AppContext";
 import Loader from "../ui/Loader";
 import styles from "./Header.module.scss";
 
-const Header = ({ isCurrenciesLoading, isError, currencies }) => {
+const Header = () => {
+  const { isCurrenciesLoading, isError, currencies } = useAppContext();
+
   if (isCurrenciesLoading) {
     return (
       <header className={styles.header}>

@@ -1,0 +1,31 @@
+@use "../../assets/scss/colors" as *;
+
+.container {
+  padding: 1.5rem;
+  flex: 1;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+
+  h2 {
+    margin: 0;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: $nt-4;
+  }
+}
+
+.inputContainer {
+  display: flex;
+  gap: 1rem;
+
+  input {
+    width: 100%;
+    padding: 0.5rem;
+  }
+
+  input:focus,
+  select:focus {
+    outline-color: $nt-6;
+  }
+}
