@@ -1,0 +1,30 @@
+@use "../../assets/scss/colors" as *;
+@use "../../assets/scss/breakpoints" as *;
+
+.header {
+  padding: 2rem 0;
+  display: flex;
+  justify-content: end;
+}
+
+.loader {
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+}
+
+.rates {
+  max-width: 200px;
+  font-size: 1.5rem;
+  color: $nt-3;
+
+  span {
+    font-size: 2rem;
+    font-weight: 500;
+    color: $nt-1;
+  }
+
+  @include sm {
+    max-width: 100%;
+  }
+}
